@@ -1,0 +1,85 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0F1E"/>
+      <stop offset="1" stop-color="#0E1628"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowAmber" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F59E0B" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="300" rx="16" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#1E293B" stroke-width="1" opacity="0.35">
+    <path d="M0 60 H900 M0 120 H900 M0 180 H900 M0 240 H900"/>
+    <path d="M100 0 V300 M200 0 V300 M300 0 V300 M400 0 V300 M500 0 V300 M600 0 V300 M700 0 V300 M800 0 V300"/>
+  </g>
+
+  <!-- Ambient glows -->
+  <circle cx="760" cy="70" r="180" fill="url(#glowCyan)"/>
+  <circle cx="140" cy="250" r="160" fill="url(#glowAmber)"/>
+
+  <!-- Terminal window frame -->
+  <rect x="40" y="34" width="820" height="232" rx="12" fill="#0B1120" stroke="#1E2A44" stroke-width="1.5"/>
+  <rect x="40" y="34" width="820" height="36" rx="12" fill="#111A2E"/>
+  <rect x="40" y="58" width="820" height="12" fill="#111A2E"/>
+  <circle cx="66" cy="52" r="6" fill="#EF4444"/>
+  <circle cx="88" cy="52" r="6" fill="#F59E0B"/>
+  <circle cx="110" cy="52" r="6" fill="#22C55E"/>
+  <text x="450" y="57" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="13" fill="#64748B">rudra@production: ~/ai-systems</text>
+
+  <!-- Prompt line -->
+  <text x="68" y="104" font-family="Consolas, Menlo, monospace" font-size="15" fill="#22D3EE">$ <tspan fill="#94A3B8">whoami --verbose</tspan></text>
+
+  <!-- Name -->
+  <text x="68" y="158" font-family="'Segoe UI', Arial, sans-serif" font-size="46" font-weight="800" fill="#F8FAFC" letter-spacing="1">RUDRA RAVAL</text>
+  <rect x="68" y="172" width="140" height="4" rx="2" fill="url(#accent)">
+    <animate attributeName="width" values="140;340;140" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Typewriter roles (cycling) -->
+  <g font-family="Consolas, Menlo, monospace" font-size="19" fill="#22D3EE">
+    <text x="68" y="212">&#8250;
+      <tspan fill="#E2E8F0" font-weight="600">
+        <animate attributeName="opacity" values="1;1;0;0;0;0;0;0;1" dur="12s" repeatCount="indefinite"/>
+        AI Engineer — building agentic systems
+      </tspan>
+    </text>
+    <text x="68" y="212" opacity="0">&#8250;
+      <tspan fill="#E2E8F0" font-weight="600">Automation — LLM workflows that ship</tspan>
+      <animate attributeName="opacity" values="0;0;1;1;0;0;0;0;0" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="68" y="212" opacity="0">&#8250;
+      <tspan fill="#E2E8F0" font-weight="600">RAG Pipelines · MCP · Multi-Agent Systems</tspan>
+      <animate attributeName="opacity" values="0;0;0;0;1;1;0;0;0" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="68" y="212" opacity="0">&#8250;
+      <tspan fill="#E2E8F0" font-weight="600">Python · FastAPI · vLLM · Docker · CI/CD</tspan>
+      <animate attributeName="opacity" values="0;0;0;0;0;0;1;1;0" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <!-- Blinking cursor -->
+    <rect x="540" y="197" width="10" height="20" fill="#F59E0B">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Status line -->
+  <text x="68" y="248" font-family="Consolas, Menlo, monospace" font-size="13" fill="#64748B">status: <tspan fill="#22C55E">● shipping to production</tspan>   <tspan fill="#334155">|</tspan>   loc: <tspan fill="#94A3B8">Ahmedabad, IN</tspan>   <tspan fill="#334155">|</tspan>   uptime: <tspan fill="#94A3B8">2+ yrs in prod</tspan></text>
+
+  <!-- Animated data flow along bottom edge -->
+  <path d="M40 280 H860" stroke="url(#accent)" stroke-width="2" stroke-dasharray="8 10" opacity="0.7">
+    <animate attributeName="stroke-dashoffset" values="0;-72" dur="2.4s" repeatCount="indefinite"/>
+  </path>
+</svg>
