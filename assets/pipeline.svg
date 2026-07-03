@@ -1,59 +1,72 @@
-<svg width="900" height="190" viewBox="0 0 900 190" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="180" viewBox="0 0 900 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Production RAG pipeline constellation">
   <defs>
-    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0A0F1E"/>
-      <stop offset="1" stop-color="#0E1628"/>
+    <radialGradient id="pspace" cx="0.5" cy="0.4" r="1">
+      <stop offset="0" stop-color="#0A0220"/>
+      <stop offset="1" stop-color="#030014"/>
+    </radialGradient>
+    <linearGradient id="pline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00F5D4"/>
+      <stop offset="0.35" stop-color="#4CC9F0"/>
+      <stop offset="0.7" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#7B2FF7"/>
     </linearGradient>
-    <linearGradient id="pipe" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#22D3EE"/>
-      <stop offset="1" stop-color="#F59E0B"/>
-    </linearGradient>
+    <filter id="pglow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
 
-  <rect width="900" height="190" rx="16" fill="url(#pbg)" stroke="#1E2A44" stroke-width="1.5"/>
+  <rect width="900" height="180" rx="14" fill="url(#pspace)"/>
 
-  <text x="40" y="42" font-family="Consolas, Menlo, monospace" font-size="14" fill="#64748B">// how I build — retrieval-augmented generation in production</text>
-
-  <!-- Connection line -->
-  <path id="flow" d="M120 110 H780" stroke="#1E2A44" stroke-width="3"/>
-  <path d="M120 110 H780" stroke="url(#pipe)" stroke-width="3" stroke-dasharray="6 14" opacity="0.8">
-    <animate attributeName="stroke-dashoffset" values="0;-80" dur="2s" repeatCount="indefinite"/>
-  </path>
-
-  <!-- Traveling pulse -->
-  <circle r="6" fill="#F8FAFC">
-    <animateMotion dur="4s" repeatCount="indefinite" path="M120 110 H780"/>
-    <animate attributeName="fill" values="#22D3EE;#38BDF8;#F59E0B;#F59E0B" dur="4s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- Nodes -->
-  <g font-family="'Segoe UI', Arial, sans-serif" text-anchor="middle">
-    <!-- Docs -->
-    <rect x="70" y="85" width="100" height="50" rx="10" fill="#0B1120" stroke="#22D3EE" stroke-width="1.5"/>
-    <text x="120" y="106" font-size="14" font-weight="700" fill="#E2E8F0">Documents</text>
-    <text x="120" y="124" font-size="11" fill="#64748B">PDF · images · 32 langs</text>
-
-    <!-- Chunk + Embed -->
-    <rect x="240" y="85" width="110" height="50" rx="10" fill="#0B1120" stroke="#38BDF8" stroke-width="1.5"/>
-    <text x="295" y="106" font-size="14" font-weight="700" fill="#E2E8F0">Chunk + Embed</text>
-    <text x="295" y="124" font-size="11" fill="#64748B">tiktoken pipelines</text>
-
-    <!-- Vector store -->
-    <rect x="420" y="85" width="100" height="50" rx="10" fill="#0B1120" stroke="#818CF8" stroke-width="1.5"/>
-    <text x="470" y="106" font-size="14" font-weight="700" fill="#E2E8F0">ChromaDB</text>
-    <text x="470" y="124" font-size="11" fill="#64748B">~99% retrieval</text>
-
-    <!-- LLM -->
-    <rect x="590" y="85" width="100" height="50" rx="10" fill="#0B1120" stroke="#F59E0B" stroke-width="1.5"/>
-    <text x="640" y="106" font-size="14" font-weight="700" fill="#E2E8F0">LLM</text>
-    <text x="640" y="124" font-size="11" fill="#64748B">Claude · GPT · vLLM</text>
-
-    <!-- Answer -->
-    <rect x="740" y="85" width="110" height="50" rx="10" fill="#0B1120" stroke="#22C55E" stroke-width="1.5"/>
-    <text x="795" y="106" font-size="14" font-weight="700" fill="#E2E8F0">Answer</text>
-    <text x="795" y="124" font-size="11" fill="#64748B">structured output</text>
+  <!-- faint stars -->
+  <g fill="#CBD5E1">
+    <circle cx="80" cy="30" r="0.9"><animate attributeName="opacity" values="1;0.3;1" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="240" cy="150" r="0.8"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="420" cy="26" r="1"><animate attributeName="opacity" values="1;0.3;1" dur="4.1s" repeatCount="indefinite"/></circle>
+    <circle cx="600" cy="152" r="0.8"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="780" cy="30" r="0.9"><animate attributeName="opacity" values="1;0.3;1" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="860" cy="140" r="0.8"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.8s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- Bottom caption -->
-  <text x="450" y="170" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="12" fill="#475569">served with FastAPI · queued with RabbitMQ · shipped in Docker</text>
+  <text x="450" y="34" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="13" fill="#8B7EC8" letter-spacing="2">— PRODUCTION RAG CONSTELLATION —</text>
+
+  <!-- constellation path -->
+  <path d="M70 100 L200 78 L330 108 L460 74 L590 106 L720 80 L840 98" fill="none" stroke="url(#pline)" stroke-width="1.6" opacity="0.7"/>
+
+  <!-- traveling pulses -->
+  <circle r="4" fill="#FFFFFF" filter="url(#pglow)">
+    <animateMotion dur="6s" repeatCount="indefinite" path="M70 100 L200 78 L330 108 L460 74 L590 106 L720 80 L840 98"/>
+  </circle>
+  <circle r="3" fill="#00F5D4" filter="url(#pglow)">
+    <animateMotion dur="6s" begin="2s" repeatCount="indefinite" path="M70 100 L200 78 L330 108 L460 74 L590 106 L720 80 L840 98"/>
+  </circle>
+  <circle r="3" fill="#A78BFA" filter="url(#pglow)">
+    <animateMotion dur="6s" begin="4s" repeatCount="indefinite" path="M70 100 L200 78 L330 108 L460 74 L590 106 L720 80 L840 98"/>
+  </circle>
+
+  <!-- star nodes + labels -->
+  <g font-family="Consolas, Menlo, monospace" font-size="12" text-anchor="middle">
+    <circle cx="70" cy="100" r="5" fill="#00F5D4" filter="url(#pglow)"/>
+    <text x="70" y="130" fill="#00F5D4">docs</text>
+
+    <circle cx="200" cy="78" r="5" fill="#4CC9F0" filter="url(#pglow)"/>
+    <text x="200" y="58" fill="#4CC9F0">chunk</text>
+
+    <circle cx="330" cy="108" r="5" fill="#4CC9F0" filter="url(#pglow)"/>
+    <text x="330" y="138" fill="#4CC9F0">embed</text>
+
+    <circle cx="460" cy="74" r="5" fill="#A78BFA" filter="url(#pglow)"/>
+    <text x="460" y="54" fill="#A78BFA">vector&#160;db</text>
+
+    <circle cx="590" cy="106" r="5" fill="#A78BFA" filter="url(#pglow)"/>
+    <text x="590" y="136" fill="#A78BFA">rerank</text>
+
+    <circle cx="720" cy="80" r="5" fill="#7B2FF7" filter="url(#pglow)"/>
+    <text x="720" y="60" fill="#B79DFC">llm</text>
+
+    <circle cx="840" cy="98" r="6" fill="#FFFFFF" filter="url(#pglow)">
+      <animate attributeName="r" values="6;7.5;6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="840" y="128" fill="#F8FAFC">answer&#160;✦</text>
+  </g>
 </svg>

@@ -1,85 +1,119 @@
-<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="340" viewBox="0 0 900 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rudra Raval — AI Engineer">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0A0F1E"/>
-      <stop offset="1" stop-color="#0E1628"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#22D3EE"/>
-      <stop offset="1" stop-color="#F59E0B"/>
-    </linearGradient>
-    <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.18"/>
-      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    <radialGradient id="space" cx="0.5" cy="0.35" r="1">
+      <stop offset="0" stop-color="#0B0223"/>
+      <stop offset="0.6" stop-color="#060118"/>
+      <stop offset="1" stop-color="#030014"/>
     </radialGradient>
-    <radialGradient id="glowAmber" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#F59E0B" stop-opacity="0.14"/>
-      <stop offset="1" stop-color="#F59E0B" stop-opacity="0"/>
-    </radialGradient>
+    <linearGradient id="auroraA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00F5D4"/>
+      <stop offset="0.5" stop-color="#4CC9F0"/>
+      <stop offset="1" stop-color="#7B2FF7"/>
+    </linearGradient>
+    <linearGradient id="auroraB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7B2FF7"/>
+      <stop offset="0.55" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#4CC9F0"/>
+    </linearGradient>
+    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00F5D4"/>
+      <stop offset="0.5" stop-color="#4CC9F0"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="meteor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <filter id="blurBig" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect width="900" height="340" rx="16"/></clipPath>
   </defs>
 
-  <!-- Background -->
-  <rect width="900" height="300" rx="16" fill="url(#bg)"/>
+  <g clip-path="url(#frame)">
+  <!-- Deep space background -->
+  <rect width="900" height="340" rx="16" fill="url(#space)"/>
 
-  <!-- Subtle grid -->
-  <g stroke="#1E293B" stroke-width="1" opacity="0.35">
-    <path d="M0 60 H900 M0 120 H900 M0 180 H900 M0 240 H900"/>
-    <path d="M100 0 V300 M200 0 V300 M300 0 V300 M400 0 V300 M500 0 V300 M600 0 V300 M700 0 V300 M800 0 V300"/>
+  <!-- Aurora curtains -->
+  <g opacity="0.55">
+    <path d="M-60 130 C 140 30, 340 170, 540 75 C 690 8, 810 100, 960 45 L 960 -80 L -60 -80 Z" fill="url(#auroraA)" filter="url(#blurBig)">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 34 14; 0 0" dur="13s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g opacity="0.35">
+    <path d="M-60 190 C 160 90, 380 220, 580 120 C 730 55, 830 150, 960 95 L 960 -80 L -60 -80 Z" fill="url(#auroraB)" filter="url(#blurBig)">
+      <animateTransform attributeName="transform" type="translate" values="0 0; -40 10; 0 0" dur="17s" repeatCount="indefinite"/>
+    </path>
   </g>
 
-  <!-- Ambient glows -->
-  <circle cx="760" cy="70" r="180" fill="url(#glowCyan)"/>
-  <circle cx="140" cy="250" r="160" fill="url(#glowAmber)"/>
+  <!-- Starfield -->
+  <g fill="#E2E8F0">
+    <circle cx="52" cy="48" r="1.4"><animate attributeName="opacity" values="1;0.2;1" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="128" cy="112" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.6s" repeatCount="indefinite"/></circle>
+    <circle cx="205" cy="40" r="1.2"><animate attributeName="opacity" values="1;0.3;1" dur="4.2s" repeatCount="indefinite"/></circle>
+    <circle cx="286" cy="90" r="0.9"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="352" cy="34" r="1.5"><animate attributeName="opacity" values="1;0.2;1" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="430" cy="70" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="4.7s" repeatCount="indefinite"/></circle>
+    <circle cx="505" cy="30" r="1.2"><animate attributeName="opacity" values="1;0.4;1" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="575" cy="98" r="0.9"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.9s" repeatCount="indefinite"/></circle>
+    <circle cx="648" cy="52" r="1.4"><animate attributeName="opacity" values="1;0.2;1" dur="3.3s" repeatCount="indefinite"/></circle>
+    <circle cx="722" cy="110" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.9s" repeatCount="indefinite"/></circle>
+    <circle cx="790" cy="38" r="1.3"><animate attributeName="opacity" values="1;0.3;1" dur="4.4s" repeatCount="indefinite"/></circle>
+    <circle cx="855" cy="82" r="1"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="95" cy="200" r="0.9"><animate attributeName="opacity" values="0.5;1;0.5" dur="3.8s" repeatCount="indefinite"/></circle>
+    <circle cx="815" cy="205" r="1.1"><animate attributeName="opacity" values="1;0.3;1" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="165" cy="278" r="0.8"><animate attributeName="opacity" values="0.4;1;0.4" dur="4.1s" repeatCount="indefinite"/></circle>
+    <circle cx="742" cy="285" r="0.9"><animate attributeName="opacity" values="1;0.4;1" dur="3.5s" repeatCount="indefinite"/></circle>
+    <circle cx="45" cy="300" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="868" cy="300" r="1.1"><animate attributeName="opacity" values="1;0.2;1" dur="3.7s" repeatCount="indefinite"/></circle>
+  </g>
 
-  <!-- Terminal window frame -->
-  <rect x="40" y="34" width="820" height="232" rx="12" fill="#0B1120" stroke="#1E2A44" stroke-width="1.5"/>
-  <rect x="40" y="34" width="820" height="36" rx="12" fill="#111A2E"/>
-  <rect x="40" y="58" width="820" height="12" fill="#111A2E"/>
-  <circle cx="66" cy="52" r="6" fill="#EF4444"/>
-  <circle cx="88" cy="52" r="6" fill="#F59E0B"/>
-  <circle cx="110" cy="52" r="6" fill="#22C55E"/>
-  <text x="450" y="57" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="13" fill="#64748B">rudra@production: ~/ai-systems</text>
+  <!-- Shooting star -->
+  <g>
+    <line x1="0" y1="0" x2="90" y2="30" stroke="url(#meteor)" stroke-width="2" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="translate" values="-120 20; 1020 320" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;0.9;0;0" keyTimes="0;0.05;0.09;0.16;0.22;1" dur="9s" repeatCount="indefinite"/>
+    </line>
+  </g>
 
-  <!-- Prompt line -->
-  <text x="68" y="104" font-family="Consolas, Menlo, monospace" font-size="15" fill="#22D3EE">$ <tspan fill="#94A3B8">whoami --verbose</tspan></text>
+  <!-- Name: soft glow layer behind, crisp text on top -->
+  <text x="450" y="172" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="56" font-weight="800" letter-spacing="3" fill="url(#nameGrad)" opacity="0.45" filter="url(#softGlow)">RUDRA RAVAL</text>
+  <text x="450" y="172" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="56" font-weight="800" letter-spacing="3" fill="url(#nameGrad)">RUDRA RAVAL</text>
 
-  <!-- Name -->
-  <text x="68" y="158" font-family="'Segoe UI', Arial, sans-serif" font-size="46" font-weight="800" fill="#F8FAFC" letter-spacing="1">RUDRA RAVAL</text>
-  <rect x="68" y="172" width="140" height="4" rx="2" fill="url(#accent)">
-    <animate attributeName="width" values="140;340;140" dur="5s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Typewriter roles (cycling) -->
-  <g font-family="Consolas, Menlo, monospace" font-size="19" fill="#22D3EE">
-    <text x="68" y="212">&#8250;
-      <tspan fill="#E2E8F0" font-weight="600">
-        <animate attributeName="opacity" values="1;1;0;0;0;0;0;0;1" dur="12s" repeatCount="indefinite"/>
-        AI Engineer — building agentic systems
-      </tspan>
+  <!-- Cycling roles -->
+  <g font-family="Consolas, Menlo, monospace" font-size="19" text-anchor="middle">
+    <text x="450" y="212" fill="#E2E8F0" font-weight="600">
+      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.23;0.25;0.97;1" dur="12s" repeatCount="indefinite"/>
+      ✦ AI Engineer — building agentic systems ✦
     </text>
-    <text x="68" y="212" opacity="0">&#8250;
-      <tspan fill="#E2E8F0" font-weight="600">Automation — LLM workflows that ship</tspan>
-      <animate attributeName="opacity" values="0;0;1;1;0;0;0;0;0" dur="12s" repeatCount="indefinite"/>
+    <text x="450" y="212" fill="#E2E8F0" font-weight="600" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.23;0.25;0.48;0.5;1" dur="12s" repeatCount="indefinite"/>
+      ✦ RAG Pipelines · MCP · Multi-Agent Systems ✦
     </text>
-    <text x="68" y="212" opacity="0">&#8250;
-      <tspan fill="#E2E8F0" font-weight="600">RAG Pipelines · MCP · Multi-Agent Systems</tspan>
-      <animate attributeName="opacity" values="0;0;0;0;1;1;0;0;0" dur="12s" repeatCount="indefinite"/>
+    <text x="450" y="212" fill="#E2E8F0" font-weight="600" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.48;0.5;0.73;0.75;1" dur="12s" repeatCount="indefinite"/>
+      ✦ LLM workflows that ship to production ✦
     </text>
-    <text x="68" y="212" opacity="0">&#8250;
-      <tspan fill="#E2E8F0" font-weight="600">Python · FastAPI · vLLM · Docker · CI/CD</tspan>
-      <animate attributeName="opacity" values="0;0;0;0;0;0;1;1;0" dur="12s" repeatCount="indefinite"/>
+    <text x="450" y="212" fill="#E2E8F0" font-weight="600" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.73;0.75;0.97;1" dur="12s" repeatCount="indefinite"/>
+      ✦ Python · FastAPI · vLLM · Docker · CI/CD ✦
     </text>
-    <!-- Blinking cursor -->
-    <rect x="540" y="197" width="10" height="20" fill="#F59E0B">
-      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-    </rect>
   </g>
 
   <!-- Status line -->
-  <text x="68" y="248" font-family="Consolas, Menlo, monospace" font-size="13" fill="#64748B">status: <tspan fill="#22C55E">● shipping to production</tspan>   <tspan fill="#334155">|</tspan>   loc: <tspan fill="#94A3B8">Ahmedabad, IN</tspan>   <tspan fill="#334155">|</tspan>   uptime: <tspan fill="#94A3B8">2+ yrs in prod</tspan></text>
+  <text x="450" y="248" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="13" fill="#8B7EC8">status: <tspan fill="#00F5D4">● shipping to production</tspan>   <tspan fill="#4C3D8F">|</tspan>   loc: <tspan fill="#C4B5FD">Ahmedabad, IN</tspan>   <tspan fill="#4C3D8F">|</tspan>   uptime: <tspan fill="#C4B5FD">2+ yrs in prod</tspan></text>
 
-  <!-- Animated data flow along bottom edge -->
-  <path d="M40 280 H860" stroke="url(#accent)" stroke-width="2" stroke-dasharray="8 10" opacity="0.7">
-    <animate attributeName="stroke-dashoffset" values="0;-72" dur="2.4s" repeatCount="indefinite"/>
-  </path>
+  <!-- Mountain silhouettes -->
+  <path d="M0 340 L0 300 L90 258 L170 302 L260 252 L360 310 L450 262 L560 312 L650 258 L760 306 L840 268 L900 296 L900 340 Z" fill="#0A0322"/>
+  <path d="M0 340 L0 318 L120 285 L230 322 L340 288 L470 326 L580 290 L700 324 L810 292 L900 318 L900 340 Z" fill="#060118"/>
+
+  <!-- Aurora baseline shimmer -->
+  <rect x="0" y="336" width="900" height="4" fill="url(#auroraA)" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.35;0.8" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  </g>
 </svg>

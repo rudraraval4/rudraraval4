@@ -1,0 +1,18 @@
+<svg width="900" height="24" viewBox="0 0 900 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="divider">
+  <defs>
+    <linearGradient id="dgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00F5D4" stop-opacity="0"/>
+      <stop offset="0.25" stop-color="#4CC9F0"/>
+      <stop offset="0.5" stop-color="#A78BFA"/>
+      <stop offset="0.75" stop-color="#7B2FF7"/>
+      <stop offset="1" stop-color="#7B2FF7" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M20 12 C 170 4, 320 20, 450 12 C 580 4, 730 20, 880 12" fill="none" stroke="url(#dgrad)" stroke-width="2" stroke-linecap="round" opacity="0.85">
+    <animate attributeName="opacity" values="0.85;0.4;0.85" dur="5s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="450" cy="12" r="3" fill="#A78BFA">
+    <animate attributeName="r" values="3;4.5;3" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.5;1" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

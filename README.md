@@ -1,13 +1,13 @@
 <div align="center">
 
-<!-- ═══ Custom animated hero (assets/hero.svg) ═══ -->
+<!-- ═══ Animated galaxy hero (assets/hero.svg) ═══ -->
 <img src="https://raw.githubusercontent.com/rudraraval4/rudraraval4/main/assets/hero.svg" width="100%" alt="Rudra Raval — AI Engineer"/>
 
 <br/><br/>
 
-<a href="https://linkedin.com/in/rudraraval"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0A0F1E&color=1E2A44"/></a>&nbsp;
-<a href="mailto:rudraraval95@gmail.com"><img src="https://img.shields.io/badge/Email-22D3EE?style=flat-square&logo=gmail&logoColor=22D3EE&label=&labelColor=0A0F1E&color=1E2A44"/></a>&nbsp;
-<img src="https://komarev.com/ghpvc/?username=rudraraval4&style=flat-square&color=0E1628&label=visitors" alt="Profile Views"/>
+<a href="https://linkedin.com/in/rudraraval"><img src="https://img.shields.io/badge/LinkedIn-4CC9F0?style=flat-square&logo=linkedin&logoColor=4CC9F0&label=&labelColor=030014&color=12042E"/></a>&nbsp;
+<a href="mailto:rudraraval95@gmail.com"><img src="https://img.shields.io/badge/Email-A78BFA?style=flat-square&logo=gmail&logoColor=A78BFA&label=&labelColor=030014&color=12042E"/></a>&nbsp;
+<img src="https://komarev.com/ghpvc/?username=rudraraval4&style=flat-square&color=7B2FF7&label=visitors" alt="Profile Views"/>
 
 </div>
 
@@ -25,7 +25,7 @@ class RudraRaval:
                            "Anthropic · Claude Code"]
 
     def current_mission(self):
-        return "Turning LLMs into reliable, production-grade products 🔥"
+        return "Turning LLMs into reliable, production-grade products ✦"
 ```
 
 - 🔭 Working on **enterprise AI for eDiscovery** — document intelligence, PII/PHI detection, multilingual pipelines
@@ -35,14 +35,16 @@ class RudraRaval:
 
 <br/>
 
-<!-- ═══ Animated production pipeline (assets/pipeline.svg) ═══ -->
+<!-- ═══ Constellation pipeline (assets/pipeline.svg) ═══ -->
 <div align="center">
 <img src="https://raw.githubusercontent.com/rudraraval4/rudraraval4/main/assets/pipeline.svg" width="100%" alt="Production RAG pipeline"/>
 </div>
 
-<br/>
+<div align="center">
+<img src="https://raw.githubusercontent.com/rudraraval4/rudraraval4/main/assets/divider.svg" width="70%" alt=""/>
+</div>
 
-## `~/production-impact`
+## ✦ Production Impact
 
 <div align="center">
 
@@ -54,9 +56,11 @@ class RudraRaval:
 
 </div>
 
-<br/>
+<div align="center">
+<img src="https://raw.githubusercontent.com/rudraraval4/rudraraval4/main/assets/divider.svg" width="70%" alt=""/>
+</div>
 
-## `~/tech-arsenal`
+## ✦ Tech Constellation
 
 <div align="center">
 
@@ -64,45 +68,51 @@ class RudraRaval:
 
 <br/><br/>
 
-<img src="https://img.shields.io/badge/Anthropic_Claude-0A0F1E?style=for-the-badge&logo=anthropic&logoColor=22D3EE"/>
-<img src="https://img.shields.io/badge/OpenAI-0A0F1E?style=for-the-badge&logo=openai&logoColor=22D3EE"/>
-<img src="https://img.shields.io/badge/Gemini-0A0F1E?style=for-the-badge&logo=googlegemini&logoColor=22D3EE"/>
-<img src="https://img.shields.io/badge/vLLM-0A0F1E?style=for-the-badge&logoColor=F59E0B&label=&color=0A0F1E"/>
-<img src="https://img.shields.io/badge/ChromaDB-0A0F1E?style=for-the-badge&logoColor=F59E0B"/>
-<img src="https://img.shields.io/badge/MCP-0A0F1E?style=for-the-badge&logo=modelcontextprotocol&logoColor=F59E0B"/>
-<img src="https://img.shields.io/badge/LangGraph-0A0F1E?style=for-the-badge&logo=langchain&logoColor=F59E0B"/>
+<img src="https://img.shields.io/badge/Anthropic_Claude-030014?style=for-the-badge&logo=anthropic&logoColor=4CC9F0"/>
+<img src="https://img.shields.io/badge/OpenAI-030014?style=for-the-badge&logo=openai&logoColor=4CC9F0"/>
+<img src="https://img.shields.io/badge/Gemini-030014?style=for-the-badge&logo=googlegemini&logoColor=4CC9F0"/>
+<img src="https://img.shields.io/badge/vLLM-030014?style=for-the-badge&label=&color=12042E&logoColor=A78BFA"/>
+<img src="https://img.shields.io/badge/ChromaDB-12042E?style=for-the-badge&logoColor=A78BFA"/>
+<img src="https://img.shields.io/badge/MCP-12042E?style=for-the-badge&logo=modelcontextprotocol&logoColor=A78BFA"/>
+<img src="https://img.shields.io/badge/LangGraph-12042E?style=for-the-badge&logo=langchain&logoColor=A78BFA"/>
 
 </div>
 
-<br/>
+<div align="center">
+<img src="https://raw.githubusercontent.com/rudraraval4/rudraraval4/main/assets/divider.svg" width="70%" alt=""/>
+</div>
 
-## `~/github-analytics`
+## ✦ GitHub Universe
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=rudraraval4&show_icons=true&hide_border=true&bg_color=0A0F1E&title_color=22D3EE&icon_color=F59E0B&text_color=94A3B8&ring_color=22D3EE"/>&nbsp;
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rudraraval4&layout=compact&hide_border=true&bg_color=0A0F1E&title_color=22D3EE&text_color=94A3B8"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=rudraraval4&show_icons=true&hide_border=true&bg_color=030014&title_color=4CC9F0&icon_color=00F5D4&text_color=A78BFA&ring_color=7B2FF7"/>&nbsp;
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rudraraval4&layout=compact&hide_border=true&bg_color=030014&title_color=4CC9F0&text_color=A78BFA"/>
 
 <br/><br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=rudraraval4&hide_border=true&background=0A0F1E&ring=22D3EE&fire=F59E0B&currStreakLabel=F59E0B&currStreakNum=E2E8F0&sideNums=E2E8F0&sideLabels=94A3B8&dates=64748B" width="60%"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=rudraraval4&hide_border=true&background=030014&ring=7B2FF7&fire=00F5D4&currStreakLabel=4CC9F0&currStreakNum=F8FAFC&sideNums=F8FAFC&sideLabels=A78BFA&dates=6B5CA5" width="60%"/>
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=rudraraval4&hide_border=true&bg_color=0A0F1E&color=94A3B8&line=22D3EE&point=F59E0B&area=true&area_color=0E1628" width="97%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=rudraraval4&hide_border=true&bg_color=030014&color=A78BFA&line=4CC9F0&point=00F5D4&area=true&area_color=12042E" width="97%"/>
 
 </div>
 
-<br/>
+<div align="center">
+<img src="https://raw.githubusercontent.com/rudraraval4/rudraraval4/main/assets/divider.svg" width="70%" alt=""/>
+</div>
 
-## `~/achievements`
+## ✦ Achievements
 
 - 🎓 **3× Anthropic Certified** — Claude API · MCP · Claude Code
 - 🤖 Designed **agentic automation systems** with multi-agent orchestration & MCP tool integrations
 
-<br/>
+<div align="center">
+<img src="https://raw.githubusercontent.com/rudraraval4/rudraraval4/main/assets/divider.svg" width="70%" alt=""/>
+</div>
 
-## `~/contribution-snake`
+## ✦ Contribution Snake
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/rudraraval4/rudraraval4/output/github-contribution-grid-snake-dark.svg" width="97%"/>
@@ -110,7 +120,7 @@ class RudraRaval:
 
 <br/>
 
-<!-- ═══ Footer (assets/footer.svg) ═══ -->
+<!-- ═══ Aurora footer (assets/footer.svg) ═══ -->
 <div align="center">
-<img src="https://raw.githubusercontent.com/rudraraval4/rudraraval4/main/assets/footer.svg" width="100%" alt="Ship it to production"/>
+<img src="https://raw.githubusercontent.com/rudraraval4/rudraraval4/main/assets/footer.svg" width="100%" alt="Let's build something stellar"/>
 </div>
