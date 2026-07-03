@@ -96,7 +96,7 @@ class RudraRaval:
 <div align="center">
 
 <img align="top" height="170" src="https://github-readme-stats-sigma-five.vercel.app/api?username=rudraraval4&show_icons=true&hide_border=true&bg_color=030014&title_color=4CC9F0&icon_color=00F5D4&text_color=A78BFA&ring_color=7B2FF7"/>&nbsp;
-<img align="top" height="170" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=rudraraval4&layout=compact&hide_border=true&bg_color=030014&title_color=4CC9F0&text_color=A78BFA"/>
+<img align="top" height="170" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=rudraraval4&layout=donut&hide_border=true&bg_color=030014&title_color=4CC9F0&text_color=A78BFA"/>
 
 <br/><br/>
 
