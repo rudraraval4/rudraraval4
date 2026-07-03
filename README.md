@@ -5,9 +5,9 @@
 
 <br/><br/>
 
-<a href="https://linkedin.com/in/rudraraval"><img src="https://img.shields.io/badge/LinkedIn-4CC9F0?style=flat-square&logo=linkedin&logoColor=4CC9F0&label=&labelColor=030014&color=12042E"/></a>&nbsp;
-<a href="mailto:rudraraval95@gmail.com"><img src="https://img.shields.io/badge/Email-A78BFA?style=flat-square&logo=gmail&logoColor=A78BFA&label=&labelColor=030014&color=12042E"/></a>&nbsp;
-<img src="https://komarev.com/ghpvc/?username=rudraraval4&style=flat-square&color=7B2FF7&label=visitors" alt="Profile Views"/>
+<a href="https://linkedin.com/in/rudraraval"><img src="https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>&nbsp;&nbsp;
+<a href="mailto:rudraraval95@gmail.com"><img src="https://img.shields.io/badge/Email_Me-7B2FF7?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>&nbsp;&nbsp;
+<img src="https://komarev.com/ghpvc/?username=rudraraval4&style=for-the-badge&color=4CC9F0&label=Visitors" alt="Profile Views"/>
 
 </div>
 
@@ -64,15 +64,30 @@ class RudraRaval:
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,fastapi,docker,rabbitmq,mysql,git,githubactions,linux&theme=dark" alt="Core stack"/>
+<b>⚙️ Languages &amp; Backend</b>
 
 <br/><br/>
 
-<img src="https://img.shields.io/badge/Anthropic_Claude-030014?style=for-the-badge&logo=anthropic&logoColor=4CC9F0"/>
-<img src="https://img.shields.io/badge/OpenAI-030014?style=for-the-badge&logo=openai&logoColor=4CC9F0"/>
-<img src="https://img.shields.io/badge/Gemini-030014?style=for-the-badge&logo=googlegemini&logoColor=4CC9F0"/>
-<img src="https://img.shields.io/badge/vLLM-030014?style=for-the-badge&label=&color=12042E&logoColor=A78BFA"/>
-<img src="https://img.shields.io/badge/ChromaDB-12042E?style=for-the-badge&logoColor=A78BFA"/>
+<img src="https://img.shields.io/badge/Python-12042E?style=for-the-badge&logo=python&logoColor=4CC9F0"/>
+<img src="https://img.shields.io/badge/FastAPI-12042E?style=for-the-badge&logo=fastapi&logoColor=4CC9F0"/>
+<img src="https://img.shields.io/badge/MySQL-12042E?style=for-the-badge&logo=mysql&logoColor=4CC9F0"/>
+<img src="https://img.shields.io/badge/Docker-12042E?style=for-the-badge&logo=docker&logoColor=4CC9F0"/>
+<img src="https://img.shields.io/badge/RabbitMQ-12042E?style=for-the-badge&logo=rabbitmq&logoColor=4CC9F0"/>
+<img src="https://img.shields.io/badge/Git-12042E?style=for-the-badge&logo=git&logoColor=4CC9F0"/>
+<img src="https://img.shields.io/badge/GitHub_Actions-12042E?style=for-the-badge&logo=githubactions&logoColor=4CC9F0"/>
+<img src="https://img.shields.io/badge/Linux-12042E?style=for-the-badge&logo=linux&logoColor=4CC9F0"/>
+
+<br/>
+
+<b>🤖 AI &amp; LLM Stack</b>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/Anthropic_Claude-12042E?style=for-the-badge&logo=anthropic&logoColor=A78BFA"/>
+<img src="https://img.shields.io/badge/OpenAI-12042E?style=for-the-badge&logo=openai&logoColor=A78BFA"/>
+<img src="https://img.shields.io/badge/Google_Gemini-12042E?style=for-the-badge&logo=googlegemini&logoColor=A78BFA"/>
+<img src="https://img.shields.io/badge/vLLM-12042E?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/ChromaDB-12042E?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/MCP-12042E?style=for-the-badge&logo=modelcontextprotocol&logoColor=A78BFA"/>
 <img src="https://img.shields.io/badge/LangGraph-12042E?style=for-the-badge&logo=langchain&logoColor=A78BFA"/>
 
@@ -86,8 +101,8 @@ class RudraRaval:
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=rudraraval4&show_icons=true&hide_border=true&bg_color=030014&title_color=4CC9F0&icon_color=00F5D4&text_color=A78BFA&ring_color=7B2FF7"/>&nbsp;
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rudraraval4&layout=compact&hide_border=true&bg_color=030014&title_color=4CC9F0&text_color=A78BFA"/>
+<img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api?username=rudraraval4&show_icons=true&hide_border=true&bg_color=030014&title_color=4CC9F0&icon_color=00F5D4&text_color=A78BFA&ring_color=7B2FF7"/>&nbsp;
+<img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=rudraraval4&layout=compact&hide_border=true&bg_color=030014&title_color=4CC9F0&text_color=A78BFA"/>
 
 <br/><br/>
 
